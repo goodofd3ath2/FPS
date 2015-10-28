@@ -31,6 +31,9 @@ public class FPS {
         
         Armas arma = new Armas();
         JOptionPane.showMessageDialog(null, arma.resumo());
+        
+        Shield shi = new Shield();
+        JOptionPane.showMessageDialog(null, shi.resumo());
     }
     
 }
