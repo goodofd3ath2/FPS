@@ -44,9 +44,9 @@ public class Personagem extends Item{
     }
     
     public String resumo(){
-        return super.resumo()+"VIDA"+this.vida+ "\n"+
-                "ALTURA"+this.altura+ "\n"+
-                "RESISTENCIA"+this.resistencia+ "\n";
+        return super.resumo()+"VIDA: "+this.vida+ "\n"+
+                "ALTURA: "+this.altura+ "\n"+
+                "RESISTENCIA: "+this.resistencia+ "\n";
         
     }
 }

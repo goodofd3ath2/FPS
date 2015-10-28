@@ -44,9 +44,9 @@ public class Item {
     }
     
     public String resumo(){
-        return "ITEM"+this.descricao + "\n"+
-                "CASH"+this.cash+ "\n"+
-                "GOLD"+this.gold+ "\n";
+        return "ITEM: "+this.descricao + "\n"+
+                "CASH: "+this.cash+ "\n"+
+                "GOLD: "+this.gold+ "\n";
     }
     
 }

@@ -44,9 +44,9 @@ public class Armas extends Item{
     }
     
     public String resumo(){
-        return super.resumo()+"DANO"+this.dano+ "\n"+
-                "PENTE"+this.pente+ "\n"+
-                "PESO"+this.peso+ "\n";
+        return super.resumo()+"DANO: "+this.dano+ "\n"+
+                "PENTE: "+this.pente+ "\n"+
+                "PESO: "+this.peso+ "\n";
     }
     
     

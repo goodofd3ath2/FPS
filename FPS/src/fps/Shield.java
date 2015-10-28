@@ -48,10 +48,10 @@ public class Shield extends Item{
     }
     
     public String resumo(){
-        return super.resumo()+"PESO"+this.peso+"\n"+
-                                "COR"+this.cor+"\n"+
-                                "MATERIAL"+this.material+"\n"+
-                                  "TAMANHO"+this.tamanho;
+        return super.resumo()+"PESO: "+this.peso+"\n"+
+                                "COR: "+this.cor+"\n"+
+                                "MATERIAL: "+this.material+"\n"+
+                                  "TAMANHO: "+this.tamanho;
     }
     
 }
