@@ -27,13 +27,18 @@ public class FPS {
         perso.setDescricao("AK-47");
         perso.setGold(300.0);
         
-        JOptionPane.showMessageDialog(null, perso.resumo());
+        //JOptionPane.showMessageDialog(null, perso.resumo());
         
         Armas arma = new Armas();
         arma.setDano(22.2);
-        arma.setPente(7);
+        arma.setPente(40);
+        arma.setMunicao(160);
         arma.setPeso(1.2);
-        JOptionPane.showMessageDialog(null, arma.resumo());
+        //JOptionPane.showMessageDialog(null, arma.resumo());
+        for (int i = 1; i <200; i++) {
+            arma.atirar();
+            System.out.println(arma.getMunicao());
+        }
         
         Shield shi = new Shield();
         shi.setCor("azul");

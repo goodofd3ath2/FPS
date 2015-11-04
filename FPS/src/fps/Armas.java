@@ -13,11 +13,30 @@ public class Armas extends Item{
     public Double peso;
     public Double dano;
     public Integer pente;
+    public Integer municao;
+    public Integer balaspente;
+
+    public Integer getMunicao() {
+        return municao;
+    }
+
+    public void setMunicao(Integer municao) {
+        this.municao = municao;
+    }
+
+    public Integer getBalaspente() {
+        return balaspente;
+    }
+
+    public void setBalaspente(Integer balaspente) {
+        this.balaspente = balaspente;
+    }
 
     public Armas(){
         this.dano = null;
         this.pente = null;
         this.peso = null;
+        this.balaspente = 0;
     }
     public Double getPeso() {
         return peso;
@@ -43,6 +62,32 @@ public class Armas extends Item{
         this.pente = pente;
     }
     
+    public Boolean atirar(){
+        if(balaspente==0){
+            if(municao == 0){
+                return false;
+            }
+            recarregar();
+        }
+        else
+        {
+            balaspente = balaspente - 1;
+        }
+      return true;  
+    }
+    
+    public Boolean recarregar(){
+        if(balaspente == 0){
+            balaspente = 40;
+            municao = municao - 40;
+            
+            return true;
+        }
+        else
+        {
+            return true;
+        }
+    }
     public String resumo(){
         return super.resumo()+"DANO: "+this.dano+ "\n"+
                 "PENTE: "+this.pente+ "\n"+
