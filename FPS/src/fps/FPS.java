@@ -41,6 +41,12 @@ public class FPS {
         shi.setPeso(12);
         shi.setTamanho(1.2);
         JOptionPane.showMessageDialog(null, shi.resumo());
+        
+        Granada granada = new Granada();
+        granada.setDano(16);
+        granada.setAreaexplo(14.5);
+        granada.setPeso(1.2);
+        JOptionPane.showMessageDialog(null, granada.resumo());
     }
     
 }
