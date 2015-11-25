@@ -18,7 +18,17 @@ public class FPS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Jogador jogador = new Jogador();
         
+        JOptionPane.showMessageDialog(null, jogador.resumo());
+        
+        Armas segunda = new Armas();
+        segunda.setDescricao("AK-47");
+        
+        jogador.setArma(segunda);
+        JOptionPane.showMessageDialog(null, jogador.resumo());
+        
+       
         Personagem perso = new Personagem();
         
         perso.setAltura(1.60);
